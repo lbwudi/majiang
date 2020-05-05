@@ -16,7 +16,7 @@ public class ReaderThread extends Thread{
     }
     @Override
     public void run() {
-        System.out.println("当前是"+id+"号线称");
+
 
         byte[] b = null;
 
@@ -26,17 +26,17 @@ public class ReaderThread extends Thread{
             byte[] msg = new byte[7];
             try {
                 inputStream.read(msg);
-                System.out.println(id+"号读到  "+msg[0]);
+
             } catch (IOException e) {
                 e.printStackTrace();
             }
 
-            System.out.println("mutex="+ msgBuffer.getMutex());
+
             msgBuffer.setMsg((byte)id, msg);
 
         }
         else{
-            System.out.println("问题少年是"+id+"号");
+
         }
     }
 }

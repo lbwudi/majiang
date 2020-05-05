@@ -18,7 +18,7 @@ class MsgBuffer {
             return clone;
         }
         else{
-            System.out.println("问题少年被困在"+msg[index][0]);
+
             return null;
         }
     }

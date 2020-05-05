@@ -109,18 +109,17 @@ public class TestGame extends Game{
 	}
 
 	/*
-	 * 把牌分配给四个玩家
+	 * 分配特殊的手牌
 	 */
-	public void distcher() {
+	public int[] disptcher(int i) {
 		//测试胡牌，碰牌和杠牌
 		String[] str = new String[] {
 				"0 1 2 3 4 5 6 7 8 9 10 11 12" ,
 				"0 0 1 2 3 4 5 6 6 6 12 13 14" ,
 				"1 2 3 3 4 5 10 11 12 13 14 15 16" ,
 				"9 10 11 12 13 14 15 16 17 20 21 22 23"};
-		for (int i = 0; i < ps.length; i++) {
-			ps[i].setpCards(initPCards(str[i]));
-		}
+
+		return initPCards(str[i]);
 	}
 
 	/*
