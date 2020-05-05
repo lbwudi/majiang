@@ -27,7 +27,7 @@ Game g = new Game(new ArrayList<>(33), new Random(), ps);
 g.procedue();
 
 //测试用例
-TestGame g = new TestGame(new ArrayList<>(33), new Random(), ps);
+TestLocalGame g = new TestLocalGame(new ArrayList<>(33), new Random(), ps);
 g.procedue();
 
 三、效果：
