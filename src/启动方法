@@ -1,4 +1,6 @@
-﻿            关于网络版--
+*请尽量正确使用，没有考虑太多错误处理
+
+  	关于网络版--
 一、使用
 1、先启动liu.server.Server
 2、再启动liu.client.ClientStart
