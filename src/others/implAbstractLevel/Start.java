@@ -3,7 +3,7 @@ package others.implAbstractLevel;
 import java.util.ArrayList;
 import java.util.Random;
 
-import others.testImpAbstract.TestGame;
+import others.testImpAbstract.TestLocalGame;
 
 public class Start {
 	public static void main(String[] args) {
@@ -17,7 +17,7 @@ public class Start {
 //		g.procedue();
 
 		//测试用例
-		TestGame g = new TestGame(new ArrayList<>(33), new Random(), ps);
+		TestLocalGame g = new TestLocalGame(new ArrayList<>(33), new Random(), ps);
 		g.procedue();
 //			for(Player p : ps) {
 //				p.show();
